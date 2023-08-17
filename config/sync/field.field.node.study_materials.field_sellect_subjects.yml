@@ -1,0 +1,29 @@
+uuid: dfc2cc1d-67c1-424a-a62f-7bafcfb644d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sellect_subjects
+    - node.type.study_materials
+    - taxonomy.vocabulary.subjects
+id: node.study_materials.field_sellect_subjects
+field_name: field_sellect_subjects
+entity_type: node
+bundle: study_materials
+label: 'sellect Subjects'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      subjects: subjects
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

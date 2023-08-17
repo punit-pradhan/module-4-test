@@ -1,0 +1,23 @@
+uuid: ab61e3ff-424b-43cf-a457-40621e7a5338
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.study_materials
+  module:
+    - text
+id: node.study_materials.body
+field_name: body
+entity_type: node
+bundle: study_materials
+label: 'assignments details'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,60 @@
+uuid: 8e32555c-cc50-4840-81da-1041be0081f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.study_materials.body
+    - field.field.node.study_materials.field_for_assignments_documents_
+    - field.field.node.study_materials.field_for_study_materials_docume
+    - field.field.node.study_materials.field_for_videos
+    - field.field.node.study_materials.field_sellect_subjects
+    - node.type.study_materials
+  module:
+    - file
+    - text
+    - user
+id: node.study_materials.teaser
+targetEntityType: node
+bundle: study_materials
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_for_assignments_documents_:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_for_study_materials_docume:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_for_videos:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_sellect_subjects: true

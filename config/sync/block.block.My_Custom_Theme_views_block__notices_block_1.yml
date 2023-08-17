@@ -1,0 +1,29 @@
+uuid: 1e63894a-9fef-43d7-9674-4a27fbb1771e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.notices
+  module:
+    - system
+    - views
+  theme:
+    - My_Custom_Theme
+id: My_Custom_Theme_views_block__notices_block_1
+theme: My_Custom_Theme
+region: top_header
+weight: -6
+provider: null
+plugin: 'views_block:notices-block_1'
+settings:
+  id: 'views_block:notices-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

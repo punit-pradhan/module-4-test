@@ -1,0 +1,27 @@
+uuid: d5a149cc-a830-4104-a32f-2b854b4c934e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_for_study_materials_docume
+    - node.type.study_materials
+  module:
+    - file
+id: node.study_materials.field_for_study_materials_docume
+field_name: field_for_study_materials_docume
+entity_type: node
+bundle: study_materials
+label: 'For Study Materials (Documents)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf docx pptx xlsx odt'
+  max_filesize: '50 MB'
+  description_field: false
+field_type: file

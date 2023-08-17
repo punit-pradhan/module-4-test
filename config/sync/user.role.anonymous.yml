@@ -1,0 +1,29 @@
+uuid: d6b09e38-cf35-4f8e-92f6-99758d1ee9da
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+    - node.type.homepage
+    - node.type.notice
+  module:
+    - comment
+    - contact
+    - filter
+    - node
+    - search
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view homepage revisions'
+  - 'view notice revisions'

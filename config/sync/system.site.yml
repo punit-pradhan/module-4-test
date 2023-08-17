@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: 95f62a28-a5c4-4c33-8bf9-c2d288fae8ef
+name: 'module 4 test'
+mail: my@drupal.com
+slogan: ''
+page:
+  403: /node/2
+  404: /node/3
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

@@ -1,0 +1,65 @@
+uuid: a2f579c1-9f29-45c4-b986-5fa3fb2de505
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.study_materials.body
+    - field.field.node.study_materials.field_for_assignments_documents_
+    - field.field.node.study_materials.field_for_study_materials_docume
+    - field.field.node.study_materials.field_for_videos
+    - field.field.node.study_materials.field_sellect_subjects
+    - node.type.study_materials
+  module:
+    - file
+    - text
+    - user
+id: node.study_materials.default
+targetEntityType: node
+bundle: study_materials
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_for_assignments_documents_:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_for_study_materials_docume:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_for_videos:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_sellect_subjects:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

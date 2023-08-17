@@ -1,0 +1,29 @@
+uuid: 9c63c990-bd37-40ea-81d6-4d558f399429
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_subjects
+    - taxonomy.vocabulary.streams
+    - taxonomy.vocabulary.subjects
+id: taxonomy_term.streams.field_subjects
+field_name: field_subjects
+entity_type: taxonomy_term
+bundle: streams
+label: subjects
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      subjects: subjects
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

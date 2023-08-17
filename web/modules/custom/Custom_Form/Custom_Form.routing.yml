@@ -1,0 +1,7 @@
+Custom_Form-form: 
+  path: '/user/register'
+  defaults: 
+    _form: '\Drupal\Custom_Form\Form\CustomUserDetails'
+    _title: 'user detail form'
+  requirements:
+    _permission: 'access content' 

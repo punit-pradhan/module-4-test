@@ -1,0 +1,58 @@
+uuid: f7d72c4d-b1a6-42be-900d-544848077460
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.homepage
+    - node.type.notice
+    - node.type.page
+    - node.type.study_materials
+    - taxonomy.vocabulary.tags
+  module:
+    - comment
+    - contextual
+    - file
+    - node
+    - path
+    - system
+    - taxonomy
+    - toolbar
+    - tour
+_core:
+  default_config_hash: Wur9kcEOwY1Jal81NssKnz3RhVJxAvBwyWQBGcA_1Go
+id: content_editor
+label: 'Academic Head'
+weight: 2
+is_admin: false
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access files overview'
+  - 'access toolbar'
+  - 'access tour'
+  - 'administer url aliases'
+  - 'create notice content'
+  - 'create study_materials content'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'delete any homepage content'
+  - 'delete any notice content'
+  - 'delete any study_materials content'
+  - 'delete article revisions'
+  - 'delete own article content'
+  - 'delete own notice content'
+  - 'delete own page content'
+  - 'delete own study_materials content'
+  - 'delete page revisions'
+  - 'edit any notice content'
+  - 'edit any study_materials content'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'edit own page content'
+  - 'edit terms in tags'
+  - 'revert all revisions'
+  - 'view all revisions'
+  - 'view own unpublished content'
+  - 'view the administration theme'

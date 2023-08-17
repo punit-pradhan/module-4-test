@@ -1,0 +1,43 @@
+<?php
+
+/**
+ * Implements hook_form_alter().
+ */
+function custom_login_form_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form_id === 'user_login_form') {
+    // Add custom fields to the login form.
+    $form['full_name'] = [
+      '#type' => 'textfield',
+      '#title' => t('Full Name'),
+      '#required' => TRUE,
+    ];
+
+    $form['email'] = [
+      '#type' => 'textfield',
+      '#title' => t('Email Address'),
+      '#required' => TRUE,
+    ];
+
+    // Remove the default username field.
+    unset($form['name']);
+
+    // Adjust the email field for login.
+    $form['mail']['#title'] = t('Email Address (used for login)');
+    $form['mail']['#description'] = '';
+
+    // Modify the password field.
+    $form['pass']['#title'] = t('Password');
+
+    // Customize the submit button label.
+    $form['actions']['submit']['#value'] = t('Login');
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() for form templates.
+ */
+function custom_login_form_theme_suggestions_form_alter(array &$suggestions, array $variables) {
+  if ($variables['element']['#form_id'] === 'user_login_form') {
+    $suggestions[] = 'form__custom_login_form';
+  }
+}

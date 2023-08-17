@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Implements hook_mail().
+ */
+function custom_form_mail($key, &$message, $params) {
+  switch ($key) {
+    case 'student_registration':
+      $message['subject'] = Drupal::translation()->translate('Student Registration');
+      $message['body'][] = Drupal::translation()->translate('Thank you for registering as a student. Your student ID is...');
+      break;
+
+    case 'admin_notification':
+      $message['subject'] = Drupal::translation()->translate('New Student Registration');
+      $message['body'][] = Drupal::translation()->translate('A new student has registered with the following details...');
+      break;
+  }
+}
+

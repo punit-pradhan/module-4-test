@@ -1,0 +1,29 @@
+uuid: 6f0e8926-1b30-4fd3-8bd0-26e8cdf0d44a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.notices
+  module:
+    - system
+    - views
+  theme:
+    - bootstrap5
+id: views_block__notices_block_1_3
+theme: bootstrap5
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:notices-block_1'
+settings:
+  id: 'views_block:notices-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

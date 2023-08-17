@@ -1,0 +1,26 @@
+uuid: 6a98826e-6c1f-4c30-8897-6b7464b232e6
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+    - system
+  theme:
+    - My_Custom_Theme
+id: My_Custom_Theme_searchform
+theme: My_Custom_Theme
+region: content
+weight: -8
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

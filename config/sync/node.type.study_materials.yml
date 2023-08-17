@@ -1,0 +1,17 @@
+uuid: 679f83a4-7c92-4c11-9441-f6da248b6be4
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Study Materials'
+type: study_materials
+description: 'Study Materials'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
